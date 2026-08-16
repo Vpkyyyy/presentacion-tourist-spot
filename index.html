@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentacion, Camarines Sur | Discover the Municipality's Hidden Destinations</title>
+<meta name="description" content="Discover Presentacion, Camarines Sur — home of Mini New Zealand's rolling green hills and the I Love Presentacion View Deck overlooking the sea.">
+
+<!-- Open Graph tags, mostly useful if this page is ever shared on social media -->
+<meta property="og:title" content="Presentacion, Camarines Sur">
+<meta property="og:description" content="Discover the beauty, scenery, and hidden destinations of Presentacion.">
+<meta property="og:image" content="images/presentacion.jpg">
+<meta property="og:type" content="website">
+
+<!-- Small leaf favicon, safe to delete this line if you don't want a browser-tab icon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231F4D36'/%3E%3Cpath d='M9 21c0-7 5-12 13-12-1 8-6 13-13 12z' fill='%23DFA94A'/%3E%3C/svg%3E">
+
+<!-- Google Fonts: Fraunces for headings, Manrope for body text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     NAVIGATION BAR
+     Text for the 5 menu links lives right here if you want to
+     rename any of them.
+========================================================== -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner container">
+    <a href="#home" class="brand">Presentacion<span class="brand-dot">.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#destinations" class="nav-link">Destinations</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#travel-tips" class="nav-link">Travel Tips</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#feedback" class="nav-link">Feedback</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- =========================================================
+       HERO SECTION — CHANGE HERO IMAGE HERE
+       The actual image file is set in one place: script.js, near
+       the top, in the "images" object under images.hero
+       The image tag below just needs a starting picture so the
+       page still looks right if JavaScript is ever turned off.
+  ========================================================== -->
+  <section id="home" class="hero">
+    <div class="hero-media">
+      <img src="images/presentacion.jpg" alt="Rolling green hills and golden sky over Presentacion, Camarines Sur" class="hero-img" id="heroImg" fetchpriority="high" decoding="async">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content container">
+      <div class="glass-card">
+        <p class="eyebrow eyebrow-light">Camarines Sur &middot; Bicol Region &middot; Philippines</p>
+        <h1>Presentacion, Camarines Sur</h1>
+        <p class="hero-subtitle">Discover the beauty, scenery, and hidden destinations of Presentacion.</p>
+        <a href="#destinations" class="btn btn-primary">Explore Destinations</a>
+      </div>
+    </div>
+
+    <a href="#destinations" class="scroll-cue" aria-label="Scroll to destinations"><span></span></a>
+  </section>
+
+  <!-- Decorative rolling-hill divider, echoes Mini New Zealand's landscape. Purely visual, safe to remove. -->
+  <div class="hill-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 C 180,20 320,100 500,60 C 700,15 800,90 980,55 C 1160,20 1300,85 1440,50 L1440,110 L0,110 Z"></path>
+    </svg>
+  </div>
+
+  <!-- =========================================================
+       DESTINATIONS SECTION
+  ========================================================== -->
+  <section id="destinations" class="destinations">
+    <div class="container">
+      <p class="eyebrow">Our Destinations</p>
+      <h2 data-animate>Explore Presentacion</h2>
+      <p class="section-lead" data-animate>Two sides of the same municipality &mdash; green highlands on one end, open sea on the other.</p>
+
+      <div class="destination-grid">
+
+        <!-- MINI NEW ZEALAND IMAGES: the card photo + full gallery are both
+             pulled from script.js -> images.miniNewZealand -->
+        <article class="destination-card" data-animate>
+          <div class="destination-media">
+            <img src="images/mini-new-zealand/mini-day-1.jpg" alt="Green rolling hills and a river at Mini New Zealand, Presentacion" class="destination-img" id="mnzCardImg" loading="lazy" decoding="async">
+            <div class="destination-scrim"></div>
+          </div>
+          <div class="destination-body">
+            <h3>Mini New Zealand</h3>
+            <p>Mini New Zealand is a scenic destination in Presentacion that offers beautiful green landscapes and peaceful surroundings. Its wide scenery, grass, trees, and long river create a relaxing view that reminds visitors of the landscapes of New Zealand.</p>
+            <div class="destination-actions">
+              <button type="button" class="btn btn-light" data-gallery="miniNewZealand">View Gallery <span aria-hidden="true">&rarr;</span></button>
+              <!-- MINI NEW ZEALAND VIDEO: file path is script.js -> videos.miniNewZealand -->
+              <button type="button" class="btn btn-ghost" data-video="miniNewZealand">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7Z"/></svg>
+                Watch Video
+              </button>
+            </div> 
+          </div>
+        </article>
+
+        <!-- VIEW DECK IMAGES: the card photo + full gallery are both
+             pulled from script.js -> images.viewDeck -->
+        <article class="destination-card" data-animate>
+          <div class="destination-media">
+            <img src="images/view-deck/viewdeck-day-1.jpg" alt="Sea view from the I Love Presentacion View Deck" class="destination-img" id="vdCardImg" loading="lazy" decoding="async">
+            <div class="destination-scrim"></div>
+          </div>
+          <div class="destination-body">
+            <h3>I Love Presentacion View Deck</h3>
+            <p>I Love Presentacion View Deck is a relaxing place where visitors can enjoy the beautiful view of the sea and surrounding scenery. It is a great place to spend time, take photographs, and appreciate the natural beauty of Presentacion.</p>
+            <div class="destination-actions">
+              <button type="button" class="btn btn-light" data-gallery="viewDeck">View Gallery <span aria-hidden="true">&rarr;</span></button>
+              <!-- VIEW DECK VIDEO: file path is script.js -> videos.viewDeck -->
+              <button type="button" class="btn btn-ghost" data-video="viewDeck">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7Z"/></svg>
+                Watch Video
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       GALLERY SECTION — GALLERY IMAGES
+       This grid is built automatically by script.js from a small
+       "highlights" list near the top of the file, so the photos
+       shown here always match images.miniNewZealand / images.viewDeck.
+  ========================================================== -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <p class="eyebrow">The Highlights</p>
+      <h2 data-animate>Presentacion Gallery</h2>
+      <p class="section-lead" data-animate>A few favorite frames from Mini New Zealand and the View Deck &mdash; tap any photo for the full set.</p>
+
+      <div class="highlight-grid" id="highlightGrid" data-animate>
+        <!-- JavaScript fills this in automatically. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT SECTION
+  ========================================================== -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-text" data-animate>
+        <p class="eyebrow">The Municipality</p>
+        <h2>About Presentacion</h2>
+        <p>Presentacion is a coastal municipality in Camarines Sur, tucked into the Bicol Region on Luzon's southeastern arm. Its eighteen barangays run from quiet upland farms down to the shoreline, which is part of why the town holds two very different postcards at once &mdash; the rolling green of Mini New Zealand inland, and the open sea at the View Deck.</p>
+        <p>Long before it carried its current name, the town was known as Parubcan &mdash; a name that still lives on today in Barangay Parubcan. Life here still moves at a small-town pace: rice and coconut farms, fishing boats, and a community that's proud to share its corner of Camarines Sur with visitors.</p>
+      </div>
+      <div class="about-media" data-animate>
+        <!-- CHANGE ABOUT SECTION IMAGE HERE: see script.js -> images.about -->
+        <img src="images/PRESENTACION HOME.jpg" alt="Countryside view in Presentacion, Camarines Sur" id="aboutImg" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       EXPERIENCE / DETAILS SECTION
+  ========================================================== -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <p class="eyebrow">What Makes It Special</p>
+      <h2 data-animate>More About the Highlights</h2>
+      <p class="section-lead" data-animate>Mini New Zealand and the I Love Presentacion View Deck capture two different moods of the municipality: the cool, green uplands and the bright, open shoreline.</p>
+
+      <div class="details-grid">
+        <article class="detail-card" data-animate>
+          <div class="detail-badge">Scenic Highlands</div>
+          <h3>Mini New Zealand</h3>
+          <p>Mini New Zealand is one of Presentacion's most iconic destinations because it feels like a quiet escape into rolling green hills, fresh air, and wide open countryside. The landscape is shaped by gentle slopes, farm fields, and long stretches of grassy terrain that create a peaceful, almost dreamlike view.</p>
+          <ul class="detail-list">
+            <li>Perfect for scenic drives, photo stops, and short nature walks.</li>
+            <li>Best enjoyed in the morning or late afternoon when the light is cooler and the hills look richer in color.</li>
+            <li>Great for travelers who want a relaxing atmosphere away from crowded tourist spots.</li>
+          </ul>
+        </article>
+
+        <article class="detail-card" data-animate>
+          <div class="detail-badge">Coastal Viewpoint</div>
+          <h3>I Love Presentacion View Deck</h3>
+          <p>I Love Presentacion View Deck is the town's welcoming lookout where visitors can pause, breathe, and enjoy a panoramic view of the sea and surrounding countryside. It is especially popular for relaxing, taking memorable photos, and watching the sunset as the sky changes color over the horizon.</p>
+          <ul class="detail-list">
+            <li>Offers a beautiful ocean view and a calm place for family gatherings and quiet moments.</li>
+            <li>Ideal for sunset viewing, taking landscape shots, and enjoying a simple coastal breeze.</li>
+            <li>Popular with tourists, friends, and locals looking for a comfortable scenic stop.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       TRAVEL TIPS SECTION
+  ========================================================== -->
+  <section id="travel-tips" class="travel-tips">
+    <div class="container">
+      <p class="eyebrow">Before You Go</p>
+      <h2 data-animate>Travel Tips</h2>
+
+      <div class="tips-grid">
+        <div class="tip-card" data-animate>
+          <span class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c3 4 6 7.5 6 11.5A6 6 0 0 1 6 13.5C6 9.5 9 6 12 2Z"/><path d="M9 14.5c0 1.5 1.2 2.5 3 2.5"/></svg>
+          </span>
+          <p>Bring water and basic necessities.</p>
+        </div>
+        <div class="tip-card" data-animate>
+          <span class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 4.5 4.5 7l2 2.2L8 8.2V20h8V8.2l1.5 1 2-2.2L16 4.5l-2.7 1.7h-2.6Z"/></svg>
+          </span>
+          <p>Wear comfortable clothing and footwear.</p>
+        </div>
+        <div class="tip-card" data-animate>
+          <span class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 7h14"/><path d="M9 7V4.8c0-.4.4-.8.9-.8h4.2c.5 0 .9.4.9.8V7"/><path d="M6.5 7 7.3 19.5c.05.85.75 1.5 1.6 1.5h6.2c.85 0 1.55-.65 1.6-1.5L17.5 7"/><path d="M10 11v6M14 11v6"/></svg>
+          </span>
+          <p>Keep the tourist spots clean.</p>
+        </div>
+        <div class="tip-card" data-animate>
+          <span class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8.5" cy="8" r="2.6"/><circle cx="16" cy="9" r="2.1"/><path d="M3.5 19c.5-3 2.5-4.8 5-4.8s4.5 1.8 5 4.8"/><path d="M14 14.6c2 .2 3.6 1.8 4 4.4"/></svg>
+          </span>
+          <p>Respect the local community.</p>
+        </div>
+        <div class="tip-card" data-animate>
+          <span class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 6.5V11c0 4.8 3.2 8.4 8 10 4.8-1.6 8-5.2 8-10V6.5Z"/><path d="M9 12l2 2 4-4.5"/></svg>
+          </span>
+          <p>Follow safety rules and local guidelines.</p>
+        </div>
+        <div class="tip-card" data-animate>
+          <span class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13.5" r="3.3"/></svg>
+          </span>
+          <p>Bring a camera to capture the scenery.</p>
+        </div>
+        <div class="tip-card" data-animate>
+          <span class="tip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="3"/><path d="M7 2v1.4M7 10.6V12M2 7h1.4M10.6 7H12M3.6 3.6l1 1M9.4 3.6l-1 1"/><path d="M8.5 12.8a4.3 4.3 0 0 0-.3 8.6h8a3.7 3.7 0 0 0 .4-7.38 4.8 4.8 0 0 0-9.1-1.2"/></svg>
+          </span>
+          <p>Check the weather before traveling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT SECTION
+  ========================================================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h2 data-animate>Get in Touch</h2>
+      <p class="section-lead" data-animate>Planning a visit, arranging a family trip, or looking for local recommendations? We’re happy to assist and help you make the most of your stay in Presentacion.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card" data-animate>
+          <h3>Municipal Tourism Office</h3>
+          <div class="contact-item">
+            <span>Phone</span>
+            <a href="tel:+639751922176">+63 9751922176</a>
+          </div>
+          <div class="contact-item">
+            <span>Email</span>
+            <a href="mailto:kyletanedo1@gmail.com">tourism.presentacion@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span>Address</span>
+            <p>Presentacion, Camarines Sur, Philippines</p>
+          </div>
+        </div>
+
+        <div class="contact-card contact-card--alt" data-animate>
+          <h3>Plan Your Visit</h3>
+          <p>Whether you’re visiting for a day trip, a weekend getaway, or a group excursion, our team can share helpful details on routes, ideal times to visit, and the best spots for photography and relaxation.</p>
+          <a href="mailto:tourism.presentacion@gmail.com?subject=Tourism%20Inquiry" class="btn btn-primary">Send an Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SHARE YOUR EXPERIENCE — sends replies straight to a Google Sheet
+  ========================================================== -->
+  <section id="feedback" class="feedback">
+    <div class="container">
+      <p class="eyebrow">Tell Us About Your Visit</p>
+      <h2 data-animate>Share Your Experience</h2>
+      <p class="section-lead" data-animate>Visited Mini New Zealand or the View Deck? Let us know how it went &mdash; your story helps the next traveler.</p>
+
+      <div class="feedback-layout">
+        <form
+          id="feedbackForm"
+          class="feedback-form"
+          data-animate
+          action="https://docs.google.com/forms/d/e/1FAIpQLSdO4kUdbr5ZyzJiP3y_v4Wdsg5Sbg0O6iusQZjBGYwaqgoQFw/formResponse"
+          method="POST"
+          target="hiddenFormFrame"
+        >
+          <div class="form-row">
+            <label for="fbName">Name</label>
+            <input type="text" id="fbName" name="entry.1620291757" placeholder="Your name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="fbSpot">Which spot did you visit?</label>
+            <select id="fbSpot" name="entry.676210186" required>
+              <option value="" disabled selected>Choose one</option>
+              <option value="Mini new zealand">Mini New Zealand</option>
+              <option value="I love presentacion View Deck">I Love Presentacion View Deck</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="fbMessage">Tell us about your experience</label>
+            <textarea id="fbMessage" name="entry.930367331" rows="4" placeholder="What did you enjoy? Any tips for other visitors?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Feedback</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="location-card">
+          <a href="https://maps.app.goo.gl/tiAVgS3KQm7PTUc49?g st=afm" target="_blank" rel="noopener noreferrer">
+            <img src="images/MAP.jpg" alt="Presentacion, Camarines Sur Location">
+          </a>
+
+          <div class="location-info">
+            <h3>Find Us in Presentacion</h3>
+            <p>Click the image to view the location on Google Maps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p class="footer-title">Presentacion, Camarines Sur</p>
+      <p class="footer-tagline">Discover. Explore. Experience Presentacion. <span class="heart" aria-hidden="true">&hearts;</span></p>
+    </div>
+    <nav class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#travel-tips">Travel Tips</a>
+      <a href="#contact">Contact</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </div>
+  <p class="footer-bottom">&copy; <span id="year"></span> Presentacion, Camarines Sur &mdash; Municipal Tourism</p>
+</footer>
+
+<!-- =========================================================
+     LIGHTBOX (full-screen photo viewer)
+     One single lightbox is reused for every gallery on the page.
+     Everything inside is filled in by script.js when a photo is
+     opened -- you shouldn't need to touch this block.
+========================================================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close gallery">&times;</button>
+
+  <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#8249;</button>
+
+  <div class="lightbox-stage">
+    <img src="" alt="" class="lightbox-image" id="lightboxImage">
+  </div>
+
+  <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">&#8250;</button>
+
+  <p class="lightbox-caption" id="lightboxCaption"></p>
+
+  <div class="lightbox-filmstrip" id="lightboxFilmstrip"></div>
+</div>
+
+<!-- =========================================================
+     VIDEO MODAL
+     Plays whichever clip was clicked. File paths live in
+     script.js -> videos. If a path is empty, this shows a
+     friendly "no video yet" message instead of a broken player.
+========================================================== -->
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player" aria-hidden="true">
+  <button type="button" class="video-modal-close" id="videoModalClose" aria-label="Close video">&times;</button>
+
+  <div class="video-modal-stage">
+    <video id="videoModalPlayer" class="video-modal-player" controls playsinline></video>
+    <div class="video-modal-empty" id="videoModalEmpty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9.3"/><path d="M10 8.3v7.4l6.2-3.7Z" fill="currentColor" stroke="none"/></svg>
+      <p>No video added yet.</p>
+      <p class="video-modal-empty-hint">Add your clip in script.js &rarr; videos</p>
+    </div>
+  </div>
+
+  <p class="video-modal-caption" id="videoModalCaption"></p>
+</div>
+
+<!-- Invisible frame the feedback form submits into, so the page never navigates away -->
+<iframe name="hiddenFormFrame" id="hiddenFormFrame" style="display:none" title="form submission frame"></iframe>
+
+<script src="script.js"></script>
+</body>
+</html>
