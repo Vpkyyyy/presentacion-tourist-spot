@@ -30,64 +30,64 @@ document.addEventListener('DOMContentLoaded', function () {
   const images = {
  
     // Big background photo at the very top of the page
-    hero: "images/PRESENTACION HOME.jpg", // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+    hero: "image/PRESENTACION HOME.jpg", // CHANGE THIS IMAGE TO YOUR OWN PHOTO
  
     // Photo used in the "About Presentacion" section
-    about: "images/PRESENTACION HOME.jpg", // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+    about: "image/PRESENTACION HOME.jpg", // CHANGE THIS IMAGE TO YOUR OWN PHOTO
 
     // Mini New Zealand — photo [0] also becomes the destination card photo.
     // All 20 appear together when someone clicks "View Gallery": the first
     // 10 are daytime shots, the last 10 are nighttime shots.
     miniNewZealand: [
       // --- daytime (indexes 0-9) ---
-      "images/new zealand.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/11.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/10.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/DAY 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/day 3.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/3.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/4.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/5.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/6.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/7.jpg", // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/new zealand.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/11.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/10.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/DAY 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/day 3.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/3.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/4.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/5.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/6.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/7.jpg", // CHANGE THIS IMAGE TO YOUR OWN PHOTO
       // --- nighttime (indexes 10-19) ---
-      "images/NIGH.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n2.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n3.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n4.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n5.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n6.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n7.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n8.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n9.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/n10.jpg"  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/NIGH.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n2.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n3.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n4.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n5.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n6.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n7.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n8.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n9.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/n10.jpg"  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
     ],
 
     // I Love Presentacion View Deck — same idea: photo [0] is the card
     // photo, first 10 are daytime, last 10 are nighttime.
     viewDeck: [
       // --- daytime (indexes 0-9) ---
-      "images/i love outside.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/presentacion angle 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/view deck angle 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/view deck angle 2.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/ view deck angle 3.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/inside 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/inside 2.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/view deck left.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/view deck down.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/sea side.jpg", // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love outside.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/presentacion angle 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/view deck angle 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/view deck angle 2.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/ view deck angle 3.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/inside 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/inside 2.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/view deck left.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/view deck down.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/sea side.jpg", // CHANGE THIS IMAGE TO YOUR OWN PHOTO
       // --- nighttime (indexes 10-19) ---
-      "images/i love night.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love night 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love night 2.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love night 4.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love night 6.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love night 8.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love night 9.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love night 10.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love stair.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
-      "images/i love cottages.jpg"  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love night.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love night 1.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love night 2.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love night 4.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love night 6.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love night 8.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love night 9.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love night 10.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love stair.jpg",  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
+      "image/i love cottages.jpg"  // CHANGE THIS IMAGE TO YOUR OWN PHOTO
     ]
   };
 
